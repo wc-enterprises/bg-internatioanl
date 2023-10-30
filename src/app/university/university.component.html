@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700;6..12,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="heropage">
+      <div style="height: 90px; width: 100%"></div>
+      <app-navbar
+        style="position: fixed; z-index: 1"
+        scrollColorChange
+      ></app-navbar>
+
+      <div id="herocont">
+        <p>Fulfil your study abroad goals!</p>
+      </div>
+      <!-- <div class="emptydiv" style="height: 90px"></div> -->
+    </div>
+
+    <!-- <div class="card-container">
+      <div class="card" *ngFor="let country of countries">
+        <div class="card-image">
+          <img [src]="country.imageUrl" alt="{{ country.name }}" />
+        </div>
+        <div class="card-details">
+          <h2>{{ country.name }}</h2>
+          <img [src]="country.iconUrl" alt="{{ country.name }}" />
+        </div>
+      </div>
+    </div> -->
+
+    <div class="card-container">
+      <div
+        class="card"
+        *ngFor="let country of countries"
+        [routerLink]="['/countrydetails']"
+      >
+        <div class="card-image">
+          <img [src]="country.imageUrl" alt="{{ country.name }}" />
+          <div class="explore-button">
+            <button [routerLink]="['/countrydetails']">Explore</button>
+          </div>
+        </div>
+        <div class="card-details">
+          <h2>{{ country.name }}</h2>
+          <img [src]="country.iconUrl" alt="{{ country.name }}" />
+        </div>
+      </div>
+    </div>
+
+    <div class="country-intro-container">
+      <span class="country-intro-head">
+        <h2>
+          Browse through the best countries to study abroad and to help you
+          discover the best countries to study and work
+        </h2>
+      </span>
+      <div class="country-intro">
+        <span>
+          <p>
+            <span class="country-intro-smallhead"> Study in UK </span>- The UK
+            is regarded as one of the best place to study abroad for Indian
+            students. Each year, the UK accepts more than 600,000 foreign
+            students for higher study. The higher education system in the UK
+            offers top-notch instruction in all fields
+          </p>
+        </span>
+        <span>
+          <p>
+            <span class="country-intro-smallhead"> Study in USA </span>-
+            Especially for individuals looking to pursue higher education, the
+            United States is regarded as one of the best study abroad
+            destinations. Additionally, the US is home to some of the greatest
+            colleges in the world, drawing the brightest foreign students from
+            all over the world.
+          </p>
+        </span>
+        <span>
+          <p>
+            <span class="country-intro-smallhead"> Study in Canada </span>-
+            Canada stands out as one of the best study abroad countries for
+            International students from all over the world Canada is a great
+            location for foreign students to pursue undergraduate and graduate
+            degrees due to its multicultural atmosphere, inexpensive
+            high-quality education, stable economy, and open immigration policy
+          </p>
+        </span>
+        <span>
+          <p>
+            <span class="country-intro-smallhead"> Study in Australia </span>-
+            Australia has had a rise in international student affinities
+            throughout time and is considered to be one among the best place to
+            study abroad for Indian students The educational system provides
+            students with a wide range of academic options. Students are drawn
+            to Australia by its top institutions, extensive course offerings,
+            student-friendly cities, and other factors
+          </p>
+        </span>
+        <span>
+          <p>
+            <span class="country-intro-smallhead"> Study in France </span>- For
+            students seeking an affordable, high-quality education, France is
+            one of the fastest-emerging and best study abroad destination The
+            education system in France is cutting-edge and offers cutting-edge
+            facilities at a far more reasonable price
+          </p>
+        </span>
+        <span>
+          <p>
+            <span class="country-intro-smallhead"> Study in Germany </span>-
+            Germany, a global innovator with top universities and research
+            centres alongside significant engineering, IT, and manufacturing
+            sectors, is regarded as one of the one of the best place to study
+            abroad for international students, International students from all
+            over the world appreciate these colleges for the high calibre of
+            instruction, the practical experiences they provide while they are
+            studying and most significantly, the welcoming and safe environment
+          </p>
+        </span>
+        <span>
+          <p>
+            <span class="country-intro-smallhead"> Study in Ireland </span>-
+            International credentials from Ireland are of the highest calibre
+            The Irish higher education system consists of 29 institutions that
+            provide more than 3000 different programmes Ireland is regarded as
+            one of the best countries for international students to study abroad
+          </p>
+        </span>
+      </div>
+    </div>
+
+    <app-footer></app-footer>
+  </body>
+</html>

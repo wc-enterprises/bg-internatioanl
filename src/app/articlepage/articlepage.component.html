@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700;6..12,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="heropage">
+      <div style="height: 90px; width: 100%"></div>
+      <app-navbar
+        style="position: fixed; z-index: 1"
+        scrollColorChange
+      ></app-navbar>
+
+      <div id="herocont">
+        <p>Articles</p>
+      </div>
+    </div>
+    <div class="breadcrumbs">
+      <span class="breadcrumbs-box">
+        <span [routerLink]="['/home']"> Home</span> >
+        <span [routerLink]="['/universities']">Universities</span> >
+        <span [routerLink]="['/countrydetails']">Canada</span>
+        > <span class="select-country"> Articles</span>
+      </span>
+    </div>
+
+    <div class="article-container" *ngIf="data">
+      <span class="article-container-sub">
+        <div class="article-head">
+          <p>{{ data.title }}</p>
+        </div>
+        <div class="article-img">
+          <img [src]="data.imageUrl" alt="Article Image" />
+        </div>
+        <div class="article-description">
+          <p>{{ data.description }}</p>
+        </div>
+
+        <div class="article-section" *ngFor="let contentItem of data.content">
+          <!-- <div
+            class="article-section1"
+            
+          > -->
+          <div
+            class="article-section-head"
+            *ngIf="contentItem.type === 'heading'"
+            style="align-self: stretch"
+          >
+            <p>{{ contentItem.text }}</p>
+          </div>
+          <div class="article-section-description">
+            <!-- <span> -->
+            <div
+              class="article-section-description-list"
+              *ngIf="contentItem.type === 'list'"
+            >
+              <ul>
+                <li *ngFor="let listItem of getListMap(contentItem.text)">
+                  {{ listItem }}
+                </li>
+              </ul>
+            </div>
+            <p
+              class="article-section-subdescription"
+              *ngIf="contentItem.type === 'paragraph'"
+            >
+              {{ contentItem.text }}
+            </p>
+            <!-- </span> -->
+          </div>
+          <!-- </div> -->
+        </div>
+
+        <div class="article-social-container">
+          <div class="article-author-info-container">
+            <span class="article-date">
+              <p>{{ data.date }}</p>
+            </span>
+            <span class="article-author-info">
+              <img [src]="data.authorImage" />
+              <span class="article-author-box">
+                <h6>{{ data.author }}</h6>
+                <p>{{ data.authorRole }}</p>
+              </span>
+            </span>
+          </div>
+
+          <div class="social">
+            <span class="social-head"><p>Share with</p></span>
+            <span class="social-network-logos">
+              <img src="/assets/facebook1.svg" alt="Facebooklogo" />
+              <img src="/assets/instagram1.svg" alt="Instagramlogo" />
+              <img src="/assets/twiter1.svg" alt="Twiterlogo" />
+            </span>
+          </div>
+        </div>
+        <span class="article-back-button">
+          <button [routerLink]="['/countrydetails']">
+            <img src="/assets/leftarrow.svg" />
+            <p>Back to articles</p>
+          </button>
+        </span>
+      </span>
+    </div>
+
+    <div class="article-keepreading-container">
+      <div class="article-header-container">
+        <h2>Keep reading</h2>
+      </div>
+      <div class="article-card-container">
+        <div
+          class="article-card"
+          *ngFor="let keepReadingArticles of getKeepReadingContents(data.id)"
+          [routerLink]="['/articlepage']"
+        >
+          <span class="article-card-img"
+            ><img src="/assets/university-article-img3.svg" alt="Article Image"
+          /></span>
+          <span class="article-card-info">
+            <h4>{{ keepReadingArticles.title }}</h4>
+            <img src="{{ keepReadingArticles.flagUrl }}" alt="Country Logo" />
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <app-footer></app-footer>
+  </body>
+</html>
