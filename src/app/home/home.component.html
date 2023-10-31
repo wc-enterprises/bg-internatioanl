@@ -28,7 +28,7 @@
       <div class="emptydiv" style="height: 90px"></div>
     </div>
 
-    <div class="service">
+    <div class="service" id="ourServices">
       <h2>Our Services</h2>
       <div class="card-container">
         <div class="card" *ngFor="let service of services">
@@ -42,14 +42,16 @@
                 service.description
               }}</span>
             </span>
-            <button>{{ service.buttonText }}</button>
+            <button [routerLink]="['/contactform']">
+              {{ service.buttonText }}
+            </button>
           </div>
         </div>
       </div>
     </div>
     <app-university-articles></app-university-articles>
 
-    <div class="event-section">
+    <div class="event-section" id="events">
       <div class="event-heading">
         <h2>{{ eventSectionTitle }}</h2>
       </div>
@@ -64,11 +66,22 @@
                 <div class="event-date">{{ event.date }}</div>
                 <div class="event-title">{{ event.title }}</div>
               </span>
-              <button>{{ event.buttonText }}</button>
+              <!-- <button>{{ event.buttonText }}</button> -->
+              <button
+                [innerText]="event.buttonText"
+                (mouseenter)="event.buttonText = 'Coming soon'"
+                (mouseleave)="event.buttonText = 'Read more'"
+              ></button>
             </div>
           </div>
         </div>
-        <button class="bottom-button">{{ bottomButtonText }}</button>
+        <button
+          class="bottom-button"
+          [innerText]="bottomButtonText"
+          (mouseenter)="bottomButtonText = 'Coming soon'"
+          (mouseleave)="bottomButtonText = 'View All Events'"
+        ></button>
+        <!-- <button >{{ bottomButtonText }}</button> -->
       </div>
     </div>
 

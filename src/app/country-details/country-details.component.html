@@ -20,9 +20,8 @@
     </div>
     <div class="breadcrumbs">
       <span class="breadcrumbs-box">
-        <span [routerLink]="['/home']">Home</span> ><span
-          [routerLink]="['/universities']"
-        >
+        <span class="selected-breadcrumbs" [routerLink]="['/home']">Home</span>
+        ><span [routerLink]="['/universities']" class="selected-breadcrumbs">
           Universities </span
         >>
         <span class="select-country">{{ getCountry(data.country) }}</span>

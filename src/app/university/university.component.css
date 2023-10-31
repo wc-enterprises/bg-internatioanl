@@ -61,7 +61,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.5s;
   z-index: 2;
 }
 
@@ -105,7 +105,7 @@ body {
 
 .card:hover {
   transform: scale(1.05);
-  transition: transform 0.3s;
+  transition: transform 0.8s;
   cursor: pointer;
 }
 
@@ -183,8 +183,87 @@ body {
 .country-intro span {
   width: 80%;
 }
-
-@media (max-width: 426px) {
+@media (max-width: 321px) {
+  body {
+    gap: 15px;
+  }
+  #heropage {
+    background-image: url("./country-mobile-hero.svg");
+    height: 60vh;
+    padding: 0px 0px 30px 0px;
+  }
+  #herocont {
+    font-size: 20px;
+    line-height: auto;
+    padding: 0px 0px 0px 15px;
+  }
+  .country-intro-container {
+    padding: 20px 15px;
+    gap: 20px;
+  }
+  .country-intro-head h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .country-intro {
+    gap: 18px;
+  }
+  .country-intro-smallhead {
+    font-size: 16px;
+    line-height: 150.2%;
+  }
+  .country-intro-head {
+    width: 100%;
+  }
+  .country-intro p {
+    font-size: 16px;
+    line-height: 150.2%;
+  }
+  .country-intro span {
+    width: 100%;
+  }
+}
+@media (min-width: 321px) and (max-width: 376px) {
+  body {
+    gap: 15px;
+  }
+  #heropage {
+    background-image: url("./country-mobile-hero.svg");
+    height: 60vh;
+    padding: 0px 0px 30px 0px;
+  }
+  #herocont {
+    font-size: 24px;
+    line-height: auto;
+    padding: 0px 0px 0px 15px;
+  }
+  .country-intro-container {
+    padding: 20px 15px;
+    gap: 20px;
+  }
+  .country-intro-head h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .country-intro {
+    gap: 18px;
+  }
+  .country-intro-smallhead {
+    font-size: 16px;
+    line-height: 150.2%;
+  }
+  .country-intro-head {
+    width: 100%;
+  }
+  .country-intro p {
+    font-size: 16px;
+    line-height: 150.2%;
+  }
+  .country-intro span {
+    width: 100%;
+  }
+}
+@media (min-width: 376px) and (max-width: 426px) {
   body {
     gap: 15px;
   }

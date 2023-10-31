@@ -62,6 +62,8 @@
 } */
 .menu-footer-cont li a {
   text-decoration: none;
+  transition: color 0.8s, border-bottom 0.8s;
+  cursor: pointer;
   color: #262626;
 }
 .menu-footer-cont li {
@@ -71,9 +73,9 @@
   font-weight: 500;
   margin: 10px 7px 10px 0px;
 }
-.menu-footer-cont li:hover {
-  width: 15px;
-  border-bottom: 2px solid #262626;
+.menu-footer-cont li a:hover {
+  color: #ec795a;
+  border-bottom: 0.5px solid #ec795a;
 }
 .netowrk-footer-cont {
   display: flex;
@@ -105,6 +107,11 @@
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.32px;
+  cursor: pointer;
+  transition: 1s ease;
+}
+.registercont-footer button:hover {
+  background: #515052;
 }
 .footer-social-container {
   display: flex;

@@ -87,12 +87,14 @@ select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg fill="gray" height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
   background-repeat: no-repeat;
   background-position: right 10px center;
   font-family: Lato;
   font-size: 14px;
   font-weight: 400;
+
+  color: #808485;
 }
 textarea {
   width: 100%;
@@ -119,10 +121,10 @@ select option {
   font-weight: 400;
   padding: 5px;
 }
-/* 
+
 input[type="date"] {
- 
-} */
+  color: #808485;
+}
 
 textarea {
   min-height: 150px;
@@ -149,6 +151,8 @@ button[type="submit"] {
   font-size: 18px;
   font-weight: 500;
   border: none;
+  cursor: pointer;
+  transition: 1s ease-in-out;
 }
 
 button[type="submit"]:hover {
@@ -233,7 +237,181 @@ button[type="submit"]:hover {
   align-items: center;
   gap: 15px;
 }
-@media (max-width: 426px) {
+@media (max-width: 321px) {
+  body {
+    gap: 25px;
+  }
+  #heropage {
+    padding: 0px 0px 40px 0px;
+    background-image: url("./contactform-mobile-hero.svg");
+  }
+  #herocont {
+    font-size: 20px;
+    padding: 0px 0px 0px 15px;
+  }
+  .contactform-container {
+    gap: 25px;
+    padding: 10px 5px;
+  }
+  .contactform-header p {
+    font-size: 28px;
+  }
+  form {
+    width: 90%;
+  }
+  .form-group {
+    flex-direction: column;
+  }
+  input {
+    width: 250px;
+    height: 30px;
+    font-size: 12px;
+  }
+  select {
+    width: 271.6px;
+    height: 51px;
+    font-size: 12px;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="gray" height="14" width="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  }
+  textarea {
+    width: 89.5%;
+    font-size: 14px;
+  }
+
+  select option[value=""][disabled] {
+    display: none;
+  }
+
+  select option {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  button[type="submit"] {
+    width: 170px;
+    padding: 13px 8px;
+    gap: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  .info-section {
+    gap: 25px;
+  }
+  .info-heading {
+    font-size: 25px;
+  }
+  .info-details {
+    gap: 25px;
+    flex-direction: column;
+  }
+  .phone-details {
+    width: 160px;
+    gap: 12px;
+  }
+  .phone-details h2 {
+    font-size: 16px;
+  }
+  .info-phone {
+    gap: 15px;
+    font-size: 14px;
+  }
+  .info-address {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .social-details {
+    width: 160px;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 321px) and (max-width: 376px) {
+  body {
+    gap: 25px;
+  }
+  #heropage {
+    padding: 0px 0px 40px 0px;
+    background-image: url("./contactform-mobile-hero.svg");
+  }
+  #herocont {
+    font-size: 22px;
+    padding: 0px 0px 0px 15px;
+  }
+  .contactform-container {
+    gap: 25px;
+    padding: 10px 15px;
+  }
+  .contactform-header p {
+    font-size: 28px;
+  }
+  form {
+    width: 90%;
+  }
+  .form-group {
+    flex-direction: column;
+  }
+  input {
+    width: 270px;
+    height: 30px;
+    font-size: 12px;
+  }
+  select {
+    width: 291.6px;
+    height: 51px;
+    font-size: 12px;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="gray" height="14" width="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  }
+  textarea {
+    width: 87%;
+    font-size: 14px;
+  }
+
+  select option[value=""][disabled] {
+    display: none;
+  }
+
+  select option {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  button[type="submit"] {
+    width: 170px;
+    padding: 13px 8px;
+    gap: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  .info-section {
+    gap: 25px;
+  }
+  .info-heading {
+    font-size: 25px;
+  }
+  .info-details {
+    gap: 25px;
+    flex-direction: column;
+  }
+  .phone-details {
+    width: 160px;
+    gap: 12px;
+  }
+  .phone-details h2 {
+    font-size: 16px;
+  }
+  .info-phone {
+    gap: 15px;
+    font-size: 14px;
+  }
+  .info-address {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .social-details {
+    width: 160px;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 376px) and (max-width: 426px) {
   body {
     gap: 25px;
   }
@@ -267,7 +445,7 @@ button[type="submit"]:hover {
     width: 341px;
     height: 51px;
     font-size: 12px;
-    background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="14" width="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg fill="gray" height="14" width="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
   }
   textarea {
     width: 90%;

@@ -31,15 +31,5 @@ export class UniversityArticlesComponent {
       image: '/assets/university-article-img3.svg',
       logo: '/assets/canadalogo.svg',
     },
-    {
-      title: 'Ten exciting careers you can have with a STEM degree',
-      image: '/assets/university-article-img4.svg',
-      logo: '/assets/germanylogo.svg',
-    },
-    {
-      title: 'Ten exciting careers you can have with a STEM degree',
-      image: '/assets/university-article-img5.svg',
-      logo: '/assets/irelandlogo.svg',
-    },
   ];
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -56,19 +56,19 @@ export class HomeComponent {
   events = [
     {
       image: '/assets/event1.svg',
-      date: '22 August 2023 ',
+      date: '10 November 2023 ',
       title: 'Students life in UK',
       buttonText: 'Read more',
     },
     {
       image: '/assets/event2.svg',
-      date: '22 August 2023 ',
+      date: '10 November 2023  ',
       title: 'Study in UK',
       buttonText: 'Read more',
     },
     {
       image: '/assets/event3.svg',
-      date: '22 August 2023 ',
+      date: '10 November 2023  ',
       title: 'Education cost in the US',
       buttonText: 'Read more',
     },
@@ -102,4 +102,18 @@ export class HomeComponent {
       description: 'Funding, visa & pre-departure prep.',
     },
   ];
+
+  scrollToOurServices() {
+    const element = document.getElementById('ourServices');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  scrollToevents() {
+    const element = document.getElementById('events');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

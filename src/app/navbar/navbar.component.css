@@ -43,12 +43,12 @@
   font-size: 17px;
   font-weight: 500;
   text-decoration: none;
-  transition: color 0.3s, border-bottom 0.3s;
 }
 .sidemenucont a:hover {
-  color: #f1eae2;
-  border-bottom: 2px solid #f1eae2;
+  color: #ec795a;
+  border-bottom: 0.5px solid #ec795a;
 }
+
 #menu-icon {
   display: none;
 }
@@ -60,8 +60,166 @@
 .sidemenucont a {
   text-decoration: none;
   color: #e5e0d7;
+  transition: color 0.8s, border-bottom 0.8s;
+  cursor: pointer;
 }
-@media (max-width: 426px) {
+@media (max-width: 321px) {
+  /*Side nav css file */
+  .sidenav {
+    height: 100%;
+    width: 500px;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    right: 0;
+    background: #2c3135;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    text-decoration: none;
+    padding: 8px 8px 8px 32px;
+    transition: 0.3s;
+    display: block;
+    color: #f1eae2;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .sidenav a:hover {
+    color: #ec795a;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+
+    top: 0;
+    right: 15px;
+    font-size: 30px;
+    margin-left: 50px;
+  }
+
+  #menu-icon {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+  }
+
+  #mySidenav {
+    display: block;
+  }
+
+  .nav-container {
+    padding: 0px 15px;
+    height: 80px;
+  }
+  .logo-container {
+    gap: 10px;
+    width: auto;
+    height: 45px;
+  }
+  .logo-container img {
+    width: 40px;
+    height: 40px;
+  }
+  .logo-container h5 {
+    font-size: 20px;
+  }
+  #sidemenu {
+    height: 45px;
+  }
+  .sidemenucont {
+    display: none;
+  }
+  #menu-icon {
+    display: block;
+    height: 35px;
+    width: 35px;
+  }
+}
+@media (min-width: 321px) and (max-width: 376px) {
+  /*Side nav css file */
+  .sidenav {
+    height: 100%;
+    width: 500px;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    right: 0;
+    background: #2c3135;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    text-decoration: none;
+    padding: 8px 8px 8px 32px;
+    transition: 0.3s;
+    display: block;
+    color: #f1eae2;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .sidenav a:hover {
+    color: #ec795a;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+
+    top: 0;
+    right: 15px;
+    font-size: 30px;
+    margin-left: 50px;
+  }
+
+  #menu-icon {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    width: 35px;
+    height: 35px;
+    font-size: 35px;
+  }
+
+  #mySidenav {
+    display: block;
+  }
+
+  .nav-container {
+    padding: 0px 15px;
+    height: 80px;
+  }
+  .logo-container {
+    gap: 10px;
+    width: auto;
+    height: 45px;
+  }
+  .logo-container img {
+    width: 45px;
+    height: 45px;
+  }
+  .logo-container h5 {
+    font-size: 22px;
+  }
+  #sidemenu {
+    height: 45px;
+  }
+  .sidemenucont {
+    display: none;
+  }
+  #menu-icon {
+    display: block;
+    height: 35px;
+    width: 35px;
+  }
+}
+@media (min-width: 376px) and (max-width: 426px) {
   /*Side nav css file */
   .sidenav {
     height: 100%;

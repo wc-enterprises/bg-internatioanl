@@ -1,6 +1,10 @@
 <body>
   <div class="nav-container">
-    <div class="logo-container">
+    <div
+      class="logo-container"
+      [routerLink]="['/home']"
+      style="cursor: pointer"
+    >
       <img src="/assets/logo.svg" alt="logo" />
       <h5>B&G International</h5>
     </div>
@@ -9,11 +13,13 @@
       <p class="sidemenucont">
         <a [routerLink]="['/']">Home</a>
       </p>
-      <p class="sidemenucont"><a>Our services</a></p>
+      <p class="sidemenucont">
+        <a href="#ourServices">Our services</a>
+      </p>
       <p class="sidemenucont">
         <a [routerLink]="['/universities']">Universities</a>
       </p>
-      <p class="sidemenucont"><a>Events</a></p>
+      <p class="sidemenucont"><a href="#events">Events</a></p>
       <p class="sidemenucont"><a>About us</a></p>
       <p class="sidemenucont">
         <a [routerLink]="['/contactform']">Contact form</a>
