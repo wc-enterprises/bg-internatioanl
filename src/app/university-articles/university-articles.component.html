@@ -1,0 +1,65 @@
+<div class="main-container">
+  <div class="main-content">
+    <h1>{{ mainTitle }}</h1>
+    <p>{{ subHeading }}</p>
+  </div>
+
+  <!-- Card container for laptop and tab screens-->
+  <div class="cards-container">
+    <div class="cards-cont">
+      <div class="card-cont1" [routerLink]="['/articlepage']">
+        <div class="card-image">
+          <img src="{{ card1.image }}" alt="{{ card1.title }}" />
+        </div>
+        <div class="card-content">
+          <span class="card-info">
+            <h2>{{ card1.title }}</h2>
+            <p>{{ card1.description }}</p>
+          </span>
+          <span class="card-logo"
+            ><img src="{{ card1.logo }}" alt="{{ card1.title }} Logo" />
+          </span>
+        </div>
+      </div>
+      <button [routerLink]="['/universities']">{{ buttonText }}</button>
+    </div>
+
+    <div class="cards">
+      <div
+        class="card"
+        *ngFor="let country of countries"
+        [routerLink]="['/articlepage']"
+      >
+        <div class="cards-image">
+          <img src="{{ country.image }}" alt="{{ country.title }}" />
+        </div>
+        <div class="card-content1">
+          <span class="card-info"
+            ><h2>{{ card1.title }}</h2>
+          </span>
+          <span class="card-logo"
+            ><img src="{{ country.logo }}" alt="{{ country.title }} Logo" />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card container for Mobile screens-->
+  <div class="article-card-container">
+    <div
+      class="article-card"
+      *ngFor="let country of countries"
+      [routerLink]="['/articlepage']"
+    >
+      <span class="article-card-img"
+        ><img src="{{ country.image }}" alt="{{ country.title }}"
+      /></span>
+      <span class="article-card-info">
+        <h4>{{ card1.title }}</h4>
+        <img src="{{ country.logo }}" alt="{{ country.title }} Logo" />
+      </span>
+    </div>
+    <button [routerLink]="['/universities']">{{ buttonText }}</button>
+  </div>
+</div>

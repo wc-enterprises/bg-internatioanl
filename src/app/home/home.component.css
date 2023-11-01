@@ -1,0 +1,1334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: auto;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 50px;
+  background: #2c3135;
+}
+
+.add-background-color {
+  background-color: #2c3135;
+  transition: background-color 1s ease;
+}
+
+#heropage {
+  background-image: url("./heroimg.svg");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+
+  object-fit: cover;
+  position: relative;
+}
+#herocont {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+  width: 50%;
+  padding: 0px 0px 0px 40px;
+}
+.heropara {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.herocont1 {
+  color: #f1eae2;
+  font-family: Lato;
+  align-self: stretch;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 65px;
+}
+.herocont2 {
+  color: #f1eae2;
+  align-self: stretch;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 400;
+}
+#herocont button {
+  border-radius: 10px;
+  background: #d5d1d1;
+  display: flex;
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #262626;
+  border: none;
+  text-align: center;
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+#herocont button:hover {
+  color: #d5d1d1;
+  background: #262626;
+}
+.service {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
+}
+.service h2 {
+  color: #fff;
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 42px;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  column-gap: 25px;
+  row-gap: 35px;
+  box-sizing: border-box;
+}
+
+.card {
+  width: fit-content;
+  max-width: 300px;
+  min-width: 200px;
+  /* padding: 5px; */
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  transition: transform 1.2s ease;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card-img {
+  width: 300px;
+  height: 250px;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  align-self: stretch;
+}
+.card-content {
+  text-align: left;
+  /* margin: 10px 0; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+.card-content-title {
+  color: #f1eae2;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+  height: 24px;
+  align-self: stretch;
+}
+.card-content-description {
+  color: #d5d1d1;
+  align-self: stretch;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%;
+  height: 65px;
+  line-height: 21px;
+}
+.card-details button {
+  display: flex;
+  padding: 12px 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border: none;
+  border-radius: 8px;
+  background: #d5d1d1;
+  color: #262626;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  cursor: pointer;
+  transition: 1s ease;
+}
+.card-details button:hover {
+  background: #f4f4f6;
+}
+.event-section {
+  display: flex;
+  padding: 25px 0px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.event-heading h2 {
+  color: #f1eae2;
+  text-align: center;
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.event-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.event-card {
+  display: flex;
+  width: fit-content;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 20px;
+  border: 0.4px solid rgba(213, 209, 209, 0.5);
+  transition: transform 1s ease;
+}
+.event-card:hover {
+  transform: scale(1.02);
+}
+.event-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.event-image {
+  width: 320px;
+  height: 223px;
+}
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+}
+.event-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  align-self: stretch;
+}
+.event-date {
+  color: #f1eae2;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.event-title {
+  color: #d5d1d1;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  display: flex;
+  height: 60px;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.event-details button {
+  display: flex;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  border: none;
+  align-self: stretch;
+  border-radius: 6px;
+  background: #d5d1d1;
+  color: #262626;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: 21px;
+
+  transition: background-color 0.4s, color 0.2s;
+}
+.event-details button:hover {
+  background: #f4f4f6;
+}
+.bottom-button {
+  display: flex;
+  width: 187px;
+  padding: 12px 25px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: none;
+  border: 1px solid #ec795a;
+  color: #d5d1d1;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  transition: 3s ease;
+  cursor: pointer;
+}
+.bottom-button:hover {
+  background: #ec795a;
+}
+
+.counseling-section {
+  display: flex;
+  padding: 25px 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.counseling-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+  align-self: stretch;
+}
+
+.counseling-info h2 {
+  color: #f1eae2;
+  align-self: stretch;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.counseling-info p {
+  color: #f1eae2;
+  align-self: stretch;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.counseling-steps {
+  display: flex;
+  padding: 10px 0px;
+  align-items: center;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.counseling-step {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: fit-content;
+  height: fit-content;
+}
+.step-image {
+  width: 40px;
+  height: 80px;
+}
+.step-image img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  object-fit: cover;
+}
+.step-cont {
+  width: 160px;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.counseling-step p {
+  color: #d5d1d1;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+@media (max-width: 320px) {
+  body {
+    gap: 25px;
+  }
+  #heropage {
+    background-image: url("./home-mobile-heroimg.svg");
+    padding: 0px;
+  }
+  #herocont {
+    gap: 25px;
+    width: 80%;
+    padding: 0px 0px 0px 15px;
+  }
+  .heropara {
+    gap: 15px;
+  }
+  .herocont1 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .herocont2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  #herocont button {
+    border-radius: 10px;
+    padding: 15px 35px;
+    font-family: Lato;
+    font-size: 16px;
+  }
+
+  .service {
+    padding: 15px 0px;
+    gap: 22px;
+  }
+  .service h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .card-container {
+    column-gap: 20px;
+    row-gap: 35px;
+    box-sizing: border-box;
+  }
+
+  .card {
+    max-width: 280px;
+    min-width: 200px;
+    gap: 10px;
+    flex-direction: row;
+  }
+  .card-img {
+    width: 150px;
+    height: 150px;
+  }
+  .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .card-details {
+    gap: 15px;
+    justify-content: space-between;
+  }
+  .card-content {
+    gap: 7px;
+  }
+  .card-content-title {
+    font-size: 14px;
+    width: 140px;
+    height: 19px;
+  }
+  .card-content-description {
+    font-size: 12px;
+    width: 140px;
+    height: 55px;
+    line-height: 18px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .card-details button {
+    padding: 10px 25px;
+    width: 140px;
+    height: 36px;
+    font-size: 12px;
+    border-radius: 7px;
+  }
+  .event-section {
+    padding: 15px 0px;
+    gap: 15px;
+  }
+
+  .event-heading h2 {
+    font-size: 20px;
+  }
+
+  .event-cards {
+    gap: 15px;
+    padding: 7px 0px;
+  }
+
+  .event-card {
+    padding: 10px;
+    gap: 15px;
+    max-width: 290px;
+    min-width: 200px;
+    border-radius: 15px;
+    flex-direction: row;
+    border: 0.4px solid rgba(213, 209, 209, 0.5);
+  }
+  .event-container {
+    gap: 15px;
+    flex-direction: column;
+  }
+  .event-image img {
+    border-radius: 10px;
+  }
+  .event-image {
+    width: 152px;
+    height: 130px;
+  }
+
+  .event-details {
+    gap: 15px;
+    justify-content: space-between;
+    height: 130px;
+  }
+  .event-info {
+    gap: 8px;
+  }
+  .event-date {
+    height: 18px;
+    width: 130px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .event-title {
+    height: 50px;
+    width: 130px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 23px;
+  }
+
+  .event-details button {
+    padding: 5px 7px;
+    font-size: 13px;
+  }
+
+  .bottom-button {
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .counseling-section {
+    padding: 15px 15px;
+    gap: 20px;
+  }
+
+  .counseling-info {
+    gap: 14px;
+  }
+
+  .counseling-info h2 {
+    font-size: 20px;
+  }
+
+  .counseling-info p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .counseling-steps {
+    display: flex;
+    padding: 10px 0px;
+    gap: 28px;
+  }
+
+  .counseling-step {
+    gap: 15px;
+  }
+  .step-image {
+    width: 40px;
+    height: 80px;
+  }
+  .step-cont {
+    width: 140px;
+    height: 80px;
+  }
+  .counseling-step p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 321px) and (max-width: 376px) {
+  body {
+    gap: 25px;
+  }
+  #heropage {
+    background-image: url("./home-mobile-heroimg.svg");
+    padding: 0px;
+  }
+  #herocont {
+    gap: 25px;
+    width: 80%;
+    padding: 0px 0px 0px 15px;
+  }
+  .heropara {
+    gap: 15px;
+  }
+  .herocont1 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .herocont2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+  #herocont button {
+    border-radius: 10px;
+    padding: 15px 35px;
+    font-family: Lato;
+    font-size: 16px;
+  }
+
+  .service {
+    padding: 15px 0px;
+    gap: 22px;
+  }
+  .service h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .card-container {
+    column-gap: 20px;
+    row-gap: 35px;
+    box-sizing: border-box;
+  }
+
+  .card {
+    max-width: 300px;
+    min-width: 200px;
+    gap: 10px;
+    flex-direction: row;
+  }
+  .card-img {
+    width: 150px;
+    height: 150px;
+  }
+  .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .card-details {
+    gap: 15px;
+    justify-content: space-between;
+  }
+  .card-content {
+    gap: 7px;
+  }
+  .card-content-title {
+    font-size: 14px;
+    width: 140px;
+    height: 19px;
+  }
+  .card-content-description {
+    font-size: 12px;
+    width: 140px;
+    height: 73px;
+    line-height: 18px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .card-details button {
+    padding: 10px 25px;
+    width: 140px;
+    height: 36px;
+    font-size: 12px;
+    border-radius: 7px;
+  }
+  .event-section {
+    padding: 15px 0px;
+    gap: 15px;
+  }
+
+  .event-heading h2 {
+    font-size: 24px;
+  }
+
+  .event-cards {
+    gap: 15px;
+    padding: 7px 0px;
+  }
+
+  .event-card {
+    padding: 10px;
+    gap: 15px;
+    max-width: 310px;
+    min-width: 200px;
+    border-radius: 15px;
+    flex-direction: row;
+    border: 0.4px solid rgba(213, 209, 209, 0.5);
+  }
+  .event-container {
+    gap: 15px;
+    flex-direction: column;
+  }
+  .event-image {
+    width: 152px;
+    height: 150px;
+  }
+
+  .event-details {
+    gap: 15px;
+    justify-content: space-between;
+  }
+  .event-info {
+    gap: 8px;
+  }
+  .event-date {
+    height: 18px;
+    width: 130px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .event-title {
+    height: 55px;
+    width: 130px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+  }
+
+  .event-details button {
+    padding: 5px 7px;
+    font-size: 13px;
+  }
+
+  .bottom-button {
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .counseling-section {
+    padding: 15px 15px;
+    gap: 20px;
+  }
+
+  .counseling-info {
+    gap: 14px;
+  }
+
+  .counseling-info h2 {
+    font-size: 24px;
+  }
+
+  .counseling-info p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .counseling-steps {
+    display: flex;
+    padding: 10px 0px;
+    gap: 28px;
+  }
+
+  .counseling-step {
+    gap: 15px;
+  }
+  .step-image {
+    width: 40px;
+    height: 80px;
+  }
+  .step-cont {
+    width: 140px;
+    height: 80px;
+  }
+  .counseling-step p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 376px) and (max-width: 426px) {
+  body {
+    gap: 25px;
+  }
+  #heropage {
+    background-image: url("./home-mobile-heroimg.svg");
+    padding: 0px;
+  }
+  #herocont {
+    gap: 25px;
+    width: 80%;
+    padding: 0px 0px 0px 15px;
+  }
+  .heropara {
+    gap: 15px;
+  }
+  .herocont1 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .herocont2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  #herocont button {
+    border-radius: 10px;
+    padding: 15px 35px;
+    font-family: Lato;
+    font-size: 18px;
+  }
+
+  .service {
+    padding: 15px 0px;
+    gap: 22px;
+  }
+  .service h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .card-container {
+    column-gap: 20px;
+    row-gap: 35px;
+    box-sizing: border-box;
+  }
+
+  .card {
+    width: fit-content;
+    max-width: 390px;
+    min-width: 200px;
+    gap: 15px;
+    flex-direction: row;
+  }
+  .card-img {
+    width: 180px;
+    height: 150px;
+  }
+  .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .card-details {
+    gap: 15px;
+    justify-content: space-between;
+  }
+  .card-content {
+    gap: 7px;
+  }
+  .card-content-title {
+    font-size: 16px;
+    width: 180px;
+    height: 19px;
+  }
+  .card-content-description {
+    font-size: 12px;
+    width: 180px;
+    height: 72px;
+    line-height: 19px;
+  }
+  .card-details button {
+    padding: 10px 25px;
+    width: 180px;
+    height: 36px;
+    font-size: 12px;
+  }
+  .event-section {
+    padding: 15px 0px;
+    gap: 15px;
+  }
+
+  .event-heading h2 {
+    font-size: 24px;
+  }
+
+  .event-cards {
+    gap: 15px;
+    padding: 7px 15px;
+  }
+
+  .event-card {
+    padding: 10px;
+    gap: 15px;
+    border-radius: 15px;
+    flex-direction: row;
+    border: 0.4px solid rgba(213, 209, 209, 0.5);
+  }
+  .event-container {
+    gap: 15px;
+    flex-direction: column;
+  }
+  .event-image {
+    width: 162px;
+    height: 150px;
+  }
+
+  .event-details {
+    gap: 15px;
+    justify-content: space-between;
+  }
+  .event-info {
+    gap: 8px;
+  }
+  .event-date {
+    height: 18px;
+    width: 160px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .event-title {
+    height: 55px;
+    width: 160px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+  }
+
+  .event-details button {
+    padding: 5px 7px;
+    font-size: 13px;
+  }
+
+  .bottom-button {
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .counseling-section {
+    padding: 15px 15px;
+    gap: 20px;
+  }
+
+  .counseling-info {
+    gap: 14px;
+  }
+
+  .counseling-info h2 {
+    font-size: 24px;
+  }
+
+  .counseling-info p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .counseling-steps {
+    display: flex;
+    padding: 10px 0px;
+    gap: 28px;
+  }
+
+  .counseling-step {
+    gap: 15px;
+  }
+  .step-image {
+    width: 40px;
+    height: 80px;
+  }
+  .step-cont {
+    width: 140px;
+    height: 80px;
+  }
+  .counseling-step p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 426px) and (max-width: 769px) {
+  body {
+    gap: 25px;
+  }
+  #heropage {
+    padding: 0px;
+  }
+  #herocont {
+    gap: 25px;
+    width: 70%;
+    padding: 0px 0px 0px 40px;
+  }
+  .heropara {
+    gap: 15px;
+  }
+  .herocont1 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .herocont2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  #herocont button {
+    border-radius: 10px;
+    padding: 15px 35px;
+    font-family: Lato;
+    font-size: 18px;
+  }
+
+  .service {
+    padding: 15px 0px;
+    gap: 30px;
+  }
+  .service h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .card-container {
+    column-gap: 20px;
+    row-gap: 35px;
+    box-sizing: border-box;
+  }
+
+  .card {
+    width: fit-content;
+    max-width: 270px;
+    min-width: 200px;
+    gap: 15px;
+  }
+  .card-img {
+    width: 270px;
+    height: 220px;
+  }
+  .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .card-details {
+    gap: 15px;
+  }
+  .card-content {
+    gap: 7px;
+  }
+  .card-content-title {
+    font-size: 16px;
+    width: 100%;
+    height: 24px;
+  }
+  .card-content-description {
+    font-size: 13px;
+    line-height: 21px;
+  }
+  .card-details button {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  .event-section {
+    padding: 15px 0px;
+    gap: 30px;
+  }
+
+  .event-heading h2 {
+    font-size: 24px;
+  }
+
+  .event-cards {
+    gap: 20px;
+    overflow: hidden;
+    height: 380px;
+  }
+
+  .event-card {
+    padding: 15px;
+    gap: 15px;
+    border-radius: 15px;
+
+    border: 0.4px solid rgba(213, 209, 209, 0.5);
+  }
+  .event-container {
+    gap: 30px;
+    flex-direction: column;
+  }
+  .event-image {
+    width: 240px;
+    height: 180px;
+  }
+
+  .event-details {
+    gap: 15px;
+  }
+  .event-info {
+    gap: 14px;
+  }
+  .event-date {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .event-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21px;
+    height: 50px;
+  }
+
+  .event-details button {
+    padding: 12px 10px;
+  }
+
+  .bottom-button {
+    width: 160px;
+    font-size: 14px;
+  }
+  .counseling-section {
+    padding: 15px 40px;
+    gap: 25px;
+  }
+
+  .counseling-info {
+    gap: 18px;
+  }
+
+  .counseling-info h2 {
+    font-size: 24px;
+  }
+
+  .counseling-info p {
+    font-size: 16px;
+  }
+
+  .counseling-steps {
+    display: flex;
+    padding: 10px 0px;
+    gap: 24px;
+  }
+
+  .counseling-step {
+    gap: 15px;
+  }
+  .step-image {
+    width: 40px;
+    height: 80px;
+  }
+  .step-cont {
+    width: 140px;
+    height: 80px;
+  }
+  .counseling-step p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1025px) {
+  body {
+    gap: 25px;
+  }
+  #heropage {
+    padding: 0px;
+  }
+  #herocont {
+    gap: 25px;
+    width: 70%;
+  }
+  .heropara {
+    gap: 15px;
+  }
+  .herocont1 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .herocont2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  #herocont button {
+    border-radius: 10px;
+    padding: 15px 35px;
+    font-family: Lato;
+    font-size: 18px;
+  }
+  .service {
+    padding: 15px 0px;
+    gap: 30px;
+  }
+  .service h2 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .card-container {
+    column-gap: 17px;
+    row-gap: 30px;
+    box-sizing: border-box;
+  }
+
+  .card {
+    width: fit-content;
+    max-width: 270px;
+    min-width: 200px;
+    gap: 15px;
+  }
+  .card-img {
+    width: 270px;
+    height: 220px;
+  }
+  .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .card-details {
+    gap: 15px;
+  }
+  .card-content {
+    gap: 7px;
+  }
+  .card-content-title {
+    font-size: 16px;
+    width: 100%;
+    height: 24px;
+  }
+  .card-content-description {
+    font-size: 13px;
+    line-height: 21px;
+  }
+  .card-details button {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  .event-section {
+    padding: 15px 0px;
+    gap: 20px;
+  }
+
+  .event-heading h2 {
+    font-size: 28px;
+  }
+
+  .event-cards {
+    gap: 20px;
+  }
+
+  .event-card {
+    padding: 15px;
+    gap: 15px;
+    border-radius: 15px;
+    border: 0.4px solid rgba(213, 209, 209, 0.5);
+  }
+  .event-container {
+    gap: 30px;
+  }
+  .event-image {
+    width: 240px;
+    height: 203px;
+  }
+
+  .event-details {
+    gap: 15px;
+  }
+  .event-info {
+    gap: 14px;
+  }
+  .event-date {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .event-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21px;
+    height: 50px;
+  }
+
+  .event-details button {
+    padding: 12px 10px;
+  }
+
+  .bottom-button {
+    width: 160px;
+    font-size: 14px;
+  }
+
+  .counseling-section {
+    padding: 15px 100px;
+    gap: 25px;
+  }
+
+  .counseling-info {
+    gap: 18px;
+  }
+
+  .counseling-info h2 {
+    font-size: 28px;
+  }
+
+  .counseling-info p {
+    font-size: 16px;
+  }
+
+  .counseling-steps {
+    display: flex;
+    padding: 10px 0px;
+    gap: 24px;
+  }
+
+  .counseling-step {
+    gap: 15px;
+  }
+  .step-image {
+    width: 40px;
+    height: 80px;
+  }
+  .step-cont {
+    width: 140px;
+    height: 80px;
+  }
+  .counseling-step p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}

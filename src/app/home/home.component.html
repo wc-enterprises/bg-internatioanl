@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700;6..12,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="heropage">
+      <div style="height: 90px; width: 100%"></div>
+      <app-navbar
+        style="position: fixed; z-index: 1"
+        scrollColorChange
+      ></app-navbar>
+
+      <div id="herocont">
+        <span class="heropara">
+          <p class="herocont1">
+            College planning <br />
+            — made easy.
+          </p>
+          <p class="herocont2">
+            Everything you need to plan, decide, and apply with confidence.
+          </p>
+        </span>
+        <button [routerLink]="['/contactform']">Register now</button>
+      </div>
+      <div class="emptydiv" style="height: 90px"></div>
+    </div>
+
+    <div class="service" id="ourServices">
+      <h2>Our Services</h2>
+      <div class="card-container">
+        <div class="card" *ngFor="let service of services">
+          <div class="card-img">
+            <img src="{{ service.image }}" alt="{{ service.title }}" />
+          </div>
+          <div class="card-details">
+            <span class="card-content">
+              <span class="card-content-title">{{ service.title }}</span>
+              <span class="card-content-description">{{
+                service.description
+              }}</span>
+            </span>
+            <button [routerLink]="['/contactform']">
+              {{ service.buttonText }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <app-university-articles></app-university-articles>
+
+    <div class="event-section" id="events">
+      <div class="event-heading">
+        <h2>{{ eventSectionTitle }}</h2>
+      </div>
+      <div class="event-container">
+        <div class="event-cards">
+          <div class="event-card" *ngFor="let event of events">
+            <div class="event-image">
+              <img src="{{ event.image }}" alt="{{ event.title }}" />
+            </div>
+            <div class="event-details">
+              <span class="event-info">
+                <div class="event-date">{{ event.date }}</div>
+                <div class="event-title">{{ event.title }}</div>
+              </span>
+              <!-- <button>{{ event.buttonText }}</button> -->
+              <button
+                [innerText]="event.buttonText"
+                (mouseenter)="event.buttonText = 'Coming soon'"
+                (mouseleave)="event.buttonText = 'Read more'"
+              ></button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="bottom-button"
+          [innerText]="bottomButtonText"
+          (mouseenter)="bottomButtonText = 'Coming soon'"
+          (mouseleave)="bottomButtonText = 'View All Events'"
+        ></button>
+        <!-- <button >{{ bottomButtonText }}</button> -->
+      </div>
+    </div>
+
+    <div class="counseling-section">
+      <div class="counseling-info">
+        <h2>{{ counselingTitle }}</h2>
+        <p>{{ counselingDescription }}</p>
+      </div>
+      <div class="counseling-steps">
+        <div class="counseling-step" *ngFor="let step of counselingSteps">
+          <div class="step-image">
+            <img src="{{ step.image }}" />
+          </div>
+          <div class="step-cont">
+            <p>{{ step.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <app-footer></app-footer>
+  </body>
+</html>

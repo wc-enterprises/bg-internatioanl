@@ -1,0 +1,52 @@
+<body>
+  <div class="nav-container">
+    <div
+      class="logo-container"
+      [routerLink]="['/home']"
+      style="cursor: pointer"
+    >
+      <img src="/assets/logo.svg" alt="logo" />
+      <h5>B&G International</h5>
+    </div>
+    <!--Laptop screen nav content-->
+    <div id="sidemenu">
+      <p class="sidemenucont">
+        <a [routerLink]="['/']">Home</a>
+      </p>
+      <p class="sidemenucont">
+        <a href="#ourServices">Our services</a>
+      </p>
+      <p class="sidemenucont">
+        <a [routerLink]="['/universities']">Universities</a>
+      </p>
+      <p class="sidemenucont"><a href="#events">Events</a></p>
+      <p class="sidemenucont"><a>About us</a></p>
+      <p class="sidemenucont">
+        <a [routerLink]="['/contactform']">Contact form</a>
+      </p>
+      <img
+        id="menu-icon"
+        style="cursor: pointer"
+        (click)="openNav()"
+        src="/assets/menu-icon.svg"
+        alt="menu-icon"
+      />
+    </div>
+    <!--Side nav for mobile and tab-->
+    <div
+      id="mySidenav"
+      class="sidenav"
+      [ngStyle]="{ 'width.px': sidenavWidth }"
+    >
+      <a href="javascript:void(0)" class="closebtn" (click)="closeNav()"
+        >&times;</a
+      >
+      <a [routerLink]="['/']">Home</a>
+      <a>Our services</a>
+      <a [routerLink]="['/universities']">Universities</a>
+      <a>Events</a>
+      <a>About us</a>
+      <a [routerLink]="['/contactform']">Contact form</a>
+    </div>
+  </div>
+</body>

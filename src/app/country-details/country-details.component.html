@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700;6..12,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body *ngIf="data">
+    <div id="heropage">
+      <div style="height: 90px; width: 100%"></div>
+      <app-navbar
+        style="position: fixed; z-index: 1"
+        scrollColorChange
+      ></app-navbar>
+
+      <div id="herocont">
+        <p>{{ getCountry(data.country) }}</p>
+        <button [routerLink]="['/contactform']">Register now</button>
+      </div>
+    </div>
+    <div class="breadcrumbs">
+      <span class="breadcrumbs-box">
+        <span class="selected-breadcrumbs" [routerLink]="['/home']">Home</span>
+        ><span [routerLink]="['/universities']" class="selected-breadcrumbs">
+          Universities </span
+        >>
+        <span class="select-country">{{ getCountry(data.country) }}</span>
+      </span>
+    </div>
+    <div class="country-introduction-container">
+      <!-- <div class="country-introduction"> -->
+      <span class="country-info-img">
+        <img src="{{ data.countryHeroImageUrl }}" />
+      </span>
+
+      <span class="country-info-box"
+        ><h3>{{ data.educationTitle }}</h3>
+
+        <p>{{ data.educationDescription }}</p></span
+      >
+
+      <!-- </div> -->
+    </div>
+    <div class="article-container">
+      <!-- Article heading and cards for {{ selectedCountry }} -->
+      <div class="article-header-container">
+        <span class="article-header">
+          <img src="/assets/articlelogo.svg" />
+          <h2>Articles</h2>
+        </span>
+      </div>
+      <div class="article-card-container">
+        <div
+          class="article-card"
+          *ngFor="let article of data.articles"
+          [routerLink]="['/articlepage']"
+        >
+          <span class="article-card-img"
+            ><img [src]="article.imageUrl" alt="Article Image"
+          /></span>
+          <span class="article-card-info">
+            <h4>{{ article.title }}</h4>
+            <img [src]="data.flagUrl" alt="Country Logo" />
+          </span>
+        </div>
+      </div>
+    </div>
+    <app-footer></app-footer>
+  </body>
+</html>
