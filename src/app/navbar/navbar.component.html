@@ -1,10 +1,6 @@
 <body>
   <div class="nav-container">
-    <div
-      class="logo-container"
-      [routerLink]="['/home']"
-      style="cursor: pointer"
-    >
+    <div class="logo-container" [routerLink]="['/']" style="cursor: pointer">
       <img src="/assets/BG-logo.svg" alt="logo" />
       <h5>B&G International</h5>
     </div>
@@ -17,12 +13,11 @@
         <a href="#ourServices">Our services</a>
       </p>
       <p class="sidemenucont">
-        <a [routerLink]="['/universities']">Universities</a>
+        <a [routerLink]="['/country']">Countries</a>
       </p>
       <p class="sidemenucont"><a href="#events">Events</a></p>
-      <p class="sidemenucont"><a>About us</a></p>
       <p class="sidemenucont">
-        <a [routerLink]="['/contactform']">Contact form</a>
+        <a [routerLink]="['/contact']">Contact form</a>
       </p>
       <img
         id="menu-icon"
@@ -43,10 +38,9 @@
       >
       <a [routerLink]="['/']">Home</a>
       <a href="#ourServices">Our services</a>
-      <a [routerLink]="['/universities']">Universities</a>
+      <a [routerLink]="['/country']">Countries</a>
       <a href="#events">Events</a>
-      <a>About us</a>
-      <a [routerLink]="['/contactform']">Contact form</a>
+      <a [routerLink]="['/contact']">Contact form</a>
     </div>
   </div>
 </body>

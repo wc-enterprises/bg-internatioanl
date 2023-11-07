@@ -10,7 +10,7 @@ import { UniversityArticlesComponent } from './university-articles/university-ar
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
-import { UniversityComponent } from './university/university.component';
+import { UniversityComponent } from './countries/countries.component';
 import { CountryDetailsComponent } from './country-details/country-details.component';
 import { ArticlepageComponent } from './articlepage/articlepage.component';
 import { ScrollColorChange } from './common-utils/background-color-change-on-scroll.directive';

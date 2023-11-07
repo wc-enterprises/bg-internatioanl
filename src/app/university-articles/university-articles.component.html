@@ -7,7 +7,7 @@
   <!-- Card container for laptop and tab screens-->
   <div class="cards-container">
     <div class="cards-cont">
-      <div class="card-cont1" [routerLink]="['/articlepage']">
+      <div class="card-cont1" [routerLink]="['/article', 'a_1000']">
         <div class="card-image">
           <img src="{{ card1.image }}" alt="{{ card1.title }}" />
         </div>
@@ -21,14 +21,14 @@
           </span>
         </div>
       </div>
-      <button [routerLink]="['/universities']">{{ buttonText }}</button>
+      <button [routerLink]="['/country']">{{ buttonText }}</button>
     </div>
 
     <div class="cards">
       <div
         class="card"
         *ngFor="let country of countries"
-        [routerLink]="['/articlepage']"
+        [routerLink]="['/article', 'a_1000']"
       >
         <div class="cards-image">
           <img src="{{ country.image }}" alt="{{ country.title }}" />
@@ -50,7 +50,7 @@
     <div
       class="article-card"
       *ngFor="let country of countries"
-      [routerLink]="['/articlepage']"
+      [routerLink]="['/article', 'a_1000']"
     >
       <span class="article-card-img"
         ><img src="{{ country.image }}" alt="{{ country.title }}"
@@ -60,6 +60,6 @@
         <img src="{{ country.logo }}" alt="{{ country.title }} Logo" />
       </span>
     </div>
-    <button [routerLink]="['/universities']">{{ buttonText }}</button>
+    <button [routerLink]="['/country']">{{ buttonText }}</button>
   </div>
 </div>

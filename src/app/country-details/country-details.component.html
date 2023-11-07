@@ -15,14 +15,14 @@
 
       <div id="herocont">
         <p>{{ getCountry(data.country) }}</p>
-        <button [routerLink]="['/contactform']">Register now</button>
+        <button [routerLink]="['/contact']">Register now</button>
       </div>
     </div>
     <div class="breadcrumbs">
       <span class="breadcrumbs-box">
-        <span class="selected-breadcrumbs" [routerLink]="['/home']">Home</span>
-        ><span [routerLink]="['/universities']" class="selected-breadcrumbs">
-          Universities </span
+        <span class="selected-breadcrumbs" [routerLink]="['/']">Home</span>
+        ><span [routerLink]="['/country']" class="selected-breadcrumbs">
+          Countries </span
         >>
         <span class="select-country">{{ getCountry(data.country) }}</span>
       </span>
@@ -53,7 +53,7 @@
         <div
           class="article-card"
           *ngFor="let article of data.articles"
-          [routerLink]="['/articlepage']"
+          [routerLink]="['/country', countryCode, 'article', article.id]"
         >
           <span class="article-card-img"
             ><img [src]="article.imageUrl" alt="Article Image"

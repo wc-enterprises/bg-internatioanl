@@ -35,16 +35,16 @@
       <div
         class="card"
         *ngFor="let country of countries"
-        [routerLink]="['/countrydetails']"
+        [routerLink]="['/country', country.name]"
       >
         <div class="card-image">
           <img [src]="country.imageUrl" alt="{{ country.name }}" />
           <div class="explore-button">
-            <button [routerLink]="['/countrydetails']">Explore</button>
+            <button [routerLink]="['/country', country.name]">Explore</button>
           </div>
         </div>
         <div class="card-details">
-          <h2>{{ country.name }}</h2>
+          <h2>{{ getCountry(country.name) }}</h2>
           <img [src]="country.iconUrl" alt="{{ country.name }}" />
         </div>
       </div>
