@@ -7,9 +7,12 @@
   <!-- Card container for laptop and tab screens-->
   <div class="cards-container">
     <div class="cards-cont">
-      <div class="card-cont1" [routerLink]="['/article', 'a_1000']">
+      <div
+        class="card-cont1"
+        [routerLink]="['/country', 'UK', 'article', card1.id]"
+      >
         <div class="card-image">
-          <img src="{{ card1.image }}" alt="{{ card1.title }}" />
+          <img src="{{ card1.imageUrl }}" alt="{{ card1.title }}" />
         </div>
         <div class="card-content">
           <span class="card-info">
@@ -17,7 +20,7 @@
             <p>{{ card1.description }}</p>
           </span>
           <span class="card-logo"
-            ><img src="{{ card1.logo }}" alt="{{ card1.title }} Logo" />
+            ><img src="{{ card1.flagUrl }}" alt="{{ card1.title }} Logo" />
           </span>
         </div>
       </div>
@@ -28,17 +31,17 @@
       <div
         class="card"
         *ngFor="let country of countries"
-        [routerLink]="['/article', 'a_1000']"
+        [routerLink]="['/country', 'CA', 'article', country.id]"
       >
         <div class="cards-image">
-          <img src="{{ country.image }}" alt="{{ country.title }}" />
+          <img src="{{ country.imageUrl }}" alt="{{ country.title }}" />
         </div>
         <div class="card-content1">
           <span class="card-info"
             ><h2>{{ card1.title }}</h2>
           </span>
           <span class="card-logo"
-            ><img src="{{ country.logo }}" alt="{{ country.title }} Logo" />
+            ><img src="{{ country.flagUrl }}" alt="{{ country.title }} Logo" />
           </span>
         </div>
       </div>
@@ -50,14 +53,14 @@
     <div
       class="article-card"
       *ngFor="let country of countries"
-      [routerLink]="['/article', 'a_1000']"
+      [routerLink]="['/country', 'US', 'article', country.id]"
     >
       <span class="article-card-img"
-        ><img src="{{ country.image }}" alt="{{ country.title }}"
+        ><img src="{{ country.imageUrl }}" alt="{{ country.title }}"
       /></span>
       <span class="article-card-info">
         <h4>{{ card1.title }}</h4>
-        <img src="{{ country.logo }}" alt="{{ country.title }} Logo" />
+        <img src="{{ country.flagUrl }}" alt="{{ country.title }} Logo" />
       </span>
     </div>
     <button [routerLink]="['/country']">{{ buttonText }}</button>

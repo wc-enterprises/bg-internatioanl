@@ -1796,19 +1796,24 @@ export const articlesBasedOnCountry: IArticleBasedOnCountry[] = [
     articles: [
       {
         id: 'au_001',
-        title: 'Seven reasons to study Accounting & Finance',
-        description: `There are many good reasons to study Accounting & Finance at university. Find out how this path can help you, both while you’re studying at uni and with your future career.`,
-        imageUrl: '/assets/accounts&finance-img.svg',
-        author: 'Tamsin Mosse',
+        title:
+          'The Australian Universities Accord Interim Report: 5 Key Takeaways For International Students',
+        description: `The Australian Universities Accord recently released an interim report, a hefty 144-page document discussing the current and future state of Australian higher education. We’ve done the reading so you don’t have to. 
 
-        date: '03 Nov 2023',
+        While a lot of the report revolves around domestic policies and issues, it also covers important information that may affect you as an international student in Australia. Many of the report’s findings have already led to action, so it’s a good sign that we’ll see even further improvements in the years to come. 
+        
+        So, don’t worry about sifting through the entire document; we’ve picked out the top five points that matter most to you as an international student in Australia. Let’s dive in!`,
+        imageUrl: '/assets/accounts&finance-img.svg',
+        author: 'Insider Guides',
+
+        date: '20 July 2023',
         authorImage: '/assets/user-icon.png',
-        authorRole: 'Content writer',
-        flagUrl: '/assets/canadalogo.svg',
+        authorRole: '-',
+        flagUrl: '/assets/australialogo.svg',
         content: [
           {
             type: 'heading',
-            text: ' Excellent graduate prospects',
+            text: ' Expansion of post-study work rights and fast-tracked permanent residency',
           },
           // {
           //   type: 'list',
@@ -1821,15 +1826,13 @@ export const articlesBasedOnCountry: IArticleBasedOnCountry[] = [
           {
             type: 'paragraph',
             text: [
-              // `If you enjoy crunching numbers, accounting could be the right business degree for you.`,
-              // `However, it’s not just number crunching on your own all day - accountants also need solid communication and critical thinking skills to talk about what the numbers mean and suggest areas of improvement in the business.`,
-              // `Earning a bachelor’s degree in accounting is one way to become a certified chartered accountant. Examples of modules you may study include principles of taxation, financial reporting and microeconomics.`,
-              `Look at our Accounting & Finance subject table, and you can see that the graduate prospects scores are pretty high. This means that students stand a decent chance of being professionally employed within six months of graduating`,
+              `The report underscores how vital international students like you are in filling Australia’s skills gaps. Starting 1 July 2023, if your degree falls into high-demand areas, you can enjoy extended post-study work rights. This move not only helps address Australia’s skills shortages but also deepens its global relationships.`,
+              `Additionally, the Government’s Migration Review proposes faster routes to permanent residency for skilled graduates. This reflects a strong commitment to fostering education in line with key sectors and government priorities. So, if you’re hoping to settle in Australia after your studies, you may be one step closer!`,
             ],
           },
           {
             type: 'heading',
-            text: `The world needs accountants`,
+            text: `Universities to connect international students with industry`,
           },
           // {
           //   type: 'list',
@@ -1841,11 +1844,13 @@ export const articlesBasedOnCountry: IArticleBasedOnCountry[] = [
           // },
           {
             type: 'paragraph',
-            text: `The world of money is constantly evolving, so accountants and financial professionals must move with the times to stay up to date. Despite this, money isn't going anywhere, and it's likely that there will always be a demand for professional number crunchers. `,
+            text: `The report also highlights the need for universities to take a more active role in bridging the gap between industry and international students. The report calls upon universities to help promote the benefits of hiring international students and guide them toward employment opportunities during and after their studies.
+
+            This aims to create a seamless pathway from education to employment, particularly for international students in fields where Australia faces skill shortages. By supporting their transition into the workforce, universities can empower international students to contribute to the growth of these industries.`,
           },
           {
             type: 'heading',
-            text: `You could work in any industry`,
+            text: `Improved online education `,
           },
           // {
           //   type: 'list',
@@ -1857,11 +1862,14 @@ export const articlesBasedOnCountry: IArticleBasedOnCountry[] = [
           // },
           {
             type: 'paragraph',
-            text: `Accountants record, classify, summarise, interpret and communicate the financial information about a business. You can apply this to any company, in any field, industry and sector. In many jobs, you could be working with a variety of clients, thus working across several different industries. `,
+            text: [
+              `Accountants record, classify, summarise, interpret and communicate the financial information about a business. You can apply this to any company, in any field, industry and sector. In many jobs, you could be working with a variety of clients, thus working across several different industries. `,
+              `Leveraging platforms like Zoom and Microsoft Teams presents opportunities for a more immersive online learning experience, especially for offshore international students unable to attend on-campus classes. The report mentions the “Embedded Tutors Program” at Charles Sturt University as a successful example of effective online learning, offering support to all students regardless of their location.`,
+            ],
           },
           {
             type: 'heading',
-            text: `Internationally diverse cohort`,
+            text: `Addressing mental health and safety concerns`,
           },
           // {
           //   type: 'list',
@@ -1873,11 +1881,11 @@ export const articlesBasedOnCountry: IArticleBasedOnCountry[] = [
           // },
           {
             type: 'paragraph',
-            text: `Subjects that fall under the broad spectrum of business and administrative studies, including Accounting & Finance, benefit from the most culturally diverse student cohort of all. Over 55,000 of the UK's students in this area come from overseas. A diverse cohort will not only expose you to people of different cultures but can provide you with an international network of contacts. `,
+            text: `The interim report highlights key issues facing students, particularly around mental health and safety. The impact of the pandemic on students’ mental health, safety concerns on campuses, and the specific challenges faced by international students are all recognised. The report also points out the high costs and inaccessibility of mental health support for international students. This recognition is a promising sign that we can expect initiatives and changes to address these concerns in the near future, thus enhancing the support systems within Australian universities.`,
           },
           {
             type: 'heading',
-            text: `Joint honours`,
+            text: `Enhancing international students’ rights and protections:`,
           },
           // {
           //   type: 'list',
@@ -1889,41 +1897,7 @@ export const articlesBasedOnCountry: IArticleBasedOnCountry[] = [
           // },
           {
             type: 'paragraph',
-            text: `Accounting & Finance complements other subject areas well, particularly those that fall under the large umbrella of business. Several universities offer Accounting & Finance joint honours degree courses, so you have the option to explore other passions. Whether you want to become a broad businessperson or an accountant with knowledge of a foreign language (useful in a global marketplace), there are plenty of combinations to choose from. 
-  
-              `,
-          },
-          {
-            type: 'heading',
-            text: `Real-life application`,
-          },
-          // {
-          //   type: 'list',
-          //   text: [
-          //     'Ideal if you enjoy working with numbers and data',
-          //     'Requires an ability to analyse information carefully and be detail-oriented',
-          //     'Communication skills also essential as your work must be understood clearly by others',
-          //   ],
-          // },
-          {
-            type: 'paragraph',
-            text: `Accounting & Finance courses often take a highly practical approach. Universities ensure their students learn by doing through simulated and real-life opportunities where you get to manage genuine business accounts.  `,
-          },
-          {
-            type: 'heading',
-            text: `Year-abroad opportunities`,
-          },
-          // {
-          //   type: 'list',
-          //   text: [
-          //     'Ideal if you enjoy working with numbers and data',
-          //     'Requires an ability to analyse information carefully and be detail-oriented',
-          //     'Communication skills also essential as your work must be understood clearly by others',
-          //   ],
-          // },
-          {
-            type: 'paragraph',
-            text: `Many Accounting & Finance courses have an optional placement year, so you could come out of university with a degree and a year of industry experience. Overseas experience could provide you with a deeper understanding of the global economy, an experience of other cultures, and extra language skills.   `,
+            text: `The report stresses the need to improve how universities inform international students about their rights and protections under Australian law. This is crucial, especially in light of issues such as workplace exploitation and unfair practices that put students at risk of visa cancellations. For instance, the Assurance Protocol, an agreement between the Department of Home Affairs and the Fair Work Ombudsman, provides a safety net for students to report exploitation without fear of visa repercussions. The review’s focus on these areas suggests a likely improvement of these protective measures in the future, ensuring a safer and more secure environment for international students. `,
           },
         ],
       },

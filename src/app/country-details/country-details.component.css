@@ -211,7 +211,7 @@ body {
 }
 .article-card-info {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 15px;
   align-self: stretch;
   width: 100%;
