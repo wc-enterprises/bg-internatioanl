@@ -8,7 +8,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { UniversityComponent } from './university/university.component';
 import { CountryDetailsComponent } from './country-details/country-details.component';
 import { ArticlepageComponent } from './articlepage/articlepage.component';
-const routes: Routes = [
+export const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'navbar', component: NavbarComponent },
   { path: 'footer', component: FooterComponent },
