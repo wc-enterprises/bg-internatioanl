@@ -8,7 +8,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { UniversityComponent } from './countries/countries.component';
 import { CountryDetailsComponent } from './country-details/country-details.component';
 import { ArticlepageComponent } from './articlepage/articlepage.component';
-const routes: Routes = [
+export const routes: Routes = [
   { path: 'footer', component: FooterComponent },
   { path: 'universityarticles', component: UniversityArticlesComponent },
   { path: 'contact', component: ContactFormComponent },
